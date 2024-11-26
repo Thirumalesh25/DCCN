@@ -14,5 +14,8 @@ public class Server
             System.out.println("Client: " + line);
         }
         System.out.println("Closing connection");
+	dis.close();
+	s.close();
+	ss.close();
 	}
 }
