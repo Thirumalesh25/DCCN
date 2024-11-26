@@ -14,5 +14,7 @@ public class Client
     		dout.flush();
 		    if(a.equalsIgnoreCase("Over")) break;
 		}
+		dout.close();
+		s.close();
 	}
 }
