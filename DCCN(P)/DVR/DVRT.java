@@ -3,9 +3,10 @@ import java.util.Scanner;
 class DVRT{
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        System.out.print("No.of vertices : ");
         int n = sc.nextInt();
         int[][] dist = new int[n][n];
-
+        System.out.println("Graph : ");
         // Input cost matrix
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
@@ -28,11 +29,12 @@ class DVRT{
         }
 
         // Print result
+        System.out.println("Shortest Distances : ");
         for (int i = 0; i < n; i++) {
-            System.out.println("Router " + (i + 1) + " table:");
             for (int j = 0; j < n; j++) {
-                System.out.println("To " + (j + 1) + " Dist: " + dist[i][j]);
+                System.out.println(dist[i][j]+" ");
             }
+            System.out.println();
         }
     }
 }
